@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Label text="To-Do List:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <ListView fx:id="taskListBox" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <Label text="Task Name:" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <TextField fx:id="taskNameField" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+
+    <Label text="Description:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextArea fx:id="descriptionArea" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+    <Label text="Priority:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <ComboBox fx:id="priorityComboBox" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+    <Label text="Status:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <ComboBox fx:id="statusComboBox" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+
+
+<Button fx:id="addButton" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+<Button fx:id="removeButton" text="Remove" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+</GridPane>
